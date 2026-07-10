@@ -1,0 +1,287 @@
+.artsweek-hero {
+  background: var(--color-bronze);
+  color: var(--color-surface);
+  padding: 84px var(--pad-x);
+  position: relative;
+  overflow: hidden;
+}
+
+.artsweek-hero-year {
+  position: absolute;
+  right: -40px;
+  top: -60px;
+  font-style: italic;
+  font-size: clamp(180px, 24vw, 340px);
+  color: rgba(246, 242, 233, 0.12);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.artsweek-hero-copy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 900px;
+}
+
+.artsweek-hero-kicker {
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  color: var(--color-gold-soft);
+}
+
+.artsweek-hero-title {
+  font-size: var(--text-hero);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.artsweek-hero-title em {
+  color: var(--color-gold-soft);
+}
+
+.artsweek-hero-dates {
+  font-size: clamp(24px, 1.5rem + 1.2vw, 34px);
+  font-style: italic;
+  color: var(--color-gold-soft);
+}
+
+.artsweek-hero-blurb {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--cream-85);
+  max-width: 640px;
+  margin: 0;
+}
+
+.artsweek-hero-ctas {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.artsweek-programme {
+  padding: 72px var(--pad-x);
+}
+
+.artsweek-programme-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.artsweek-programme-title {
+  font-size: var(--text-section);
+  margin: 0;
+}
+
+.artsweek-programme-note {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--ink-55);
+}
+
+.artsweek-programme-footnote {
+  border-top: 1px solid var(--ink-25);
+  padding-top: 26px;
+  font-size: 13.5px;
+  color: var(--ink-65);
+}
+
+.artsweek-sponsors {
+  border-top: 1px solid var(--ink-15);
+  padding: var(--pad-x);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.artsweek-sponsors-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.artsweek-sponsors-names {
+  font-size: clamp(26px, 1.5rem + 1.2vw, 34px);
+  line-height: 1.15;
+}
+
+.artsweek-sponsors-blurb {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--ink-70);
+  margin: 0;
+}
+
+.artsweek-sponsor-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--color-surface-alt);
+  padding: 40px;
+  border: 1px solid var(--ink-15);
+}
+
+.artsweek-sponsor-title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.artsweek-sponsor-blurb {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-70);
+  margin: 0;
+}
+
+.artsweek-sponsor-cta {
+  align-self: flex-start;
+  padding: 14px 26px;
+}
+
+/* workshops page */
+.workshops-page {
+  padding: 64px var(--pad-x);
+}
+
+.workshops-page .breadcrumb {
+  margin-bottom: 18px;
+}
+
+.workshops-intro {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 64px;
+  align-items: end;
+  margin-bottom: 44px;
+}
+
+.workshops-title {
+  font-size: var(--text-display);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.workshops-desc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-70);
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.workshops-footer {
+  border-top: 1px solid var(--ink-25);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.workshops-footer-note {
+  font-size: 13.5px;
+  color: var(--ink-65);
+}
+
+.workshops-footer .pill {
+  font-size: 12px;
+  padding: 13px 26px;
+}
+
+/* sponsors page */
+.sponsors-page {
+  padding: 72px var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.sponsors-intro {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sponsors-title {
+  font-size: var(--text-display);
+  line-height: 1;
+  margin: 0;
+}
+
+.sponsors-blurb {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-75);
+  margin: 0;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.sponsor-card {
+  border: 1px solid var(--ink-18);
+  background: var(--color-card);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sponsor-card-name {
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.sponsors-cta {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--ink-15);
+  padding: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.sponsors-cta-title {
+  font-size: 30px;
+  line-height: 1.2;
+  max-width: 620px;
+  margin: 0;
+}
+
+.sponsors-cta .pill {
+  flex: none;
+  padding: 16px 32px;
+}
+
+@media (max-width: 1024px) {
+  .artsweek-sponsors {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .workshops-intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: 1fr;
+  }
+}

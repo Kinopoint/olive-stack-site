@@ -1,0 +1,134 @@
+.collection-header {
+  padding: 56px var(--pad-x) 32px;
+  border-bottom: 1px solid var(--ink-15);
+}
+
+.collection-header .breadcrumb {
+  margin-bottom: 18px;
+}
+
+.collection-intro {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 64px;
+  align-items: end;
+}
+
+.collection-title {
+  font-size: var(--text-display);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.collection-desc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-70);
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.collection-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px var(--pad-x);
+  border-bottom: 1px solid var(--ink-15);
+  font-size: 13px;
+  font-weight: 500;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.collection-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.collection-tab {
+  cursor: pointer;
+  border: 1px solid var(--ink-30);
+  border-radius: 99px;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  transition:
+    background var(--duration-fast),
+    color var(--duration-fast),
+    border-color var(--duration-fast);
+}
+
+.collection-tab:hover {
+  border-color: var(--color-deep);
+}
+
+.collection-tab.is-active {
+  background: var(--color-deep);
+  color: var(--color-surface);
+  border-color: var(--color-deep);
+}
+
+.collection-meta {
+  display: flex;
+  gap: 24px;
+  color: var(--ink-65);
+}
+
+.collection-sort {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.collection-grid {
+  padding: 48px var(--pad-x) 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px 28px;
+}
+
+.collection-grid .work-card-media img:not(.is-natural) {
+  height: 430px;
+}
+
+.collection-empty {
+  padding: 80px var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.collection-empty-note {
+  font-size: 30px;
+  font-style: italic;
+  color: var(--ink-65);
+}
+
+.collection-empty .pill {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 15px 30px;
+}
+
+@media (max-width: 1024px) {
+  .collection-intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-grid .work-card-media img:not(.is-natural) {
+    height: 340px;
+  }
+}

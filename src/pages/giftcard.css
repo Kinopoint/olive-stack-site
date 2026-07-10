@@ -1,0 +1,118 @@
+.giftcard-page {
+  padding: 72px var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.giftcard-intro {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.giftcard-title {
+  font-size: var(--text-display);
+  line-height: 1;
+  margin: 0;
+}
+
+.giftcard-blurb {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink-75);
+  margin: 0;
+}
+
+.giftcard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.giftcard-card {
+  border: 1px solid var(--ink-18);
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.giftcard-card--gallery {
+  background: var(--color-card);
+}
+
+.giftcard-card--artsweek {
+  background: var(--color-surface-alt);
+}
+
+.giftcard-card-title {
+  font-size: 34px;
+  margin: 0;
+}
+
+.giftcard-review {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-70);
+}
+
+.giftcard-review-tag {
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  color: var(--ink-50);
+}
+
+.giftcard-amounts {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.giftcard-amount {
+  cursor: pointer;
+  border: 1px solid var(--ink-35);
+  border-radius: 99px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  transition:
+    background var(--duration-fast),
+    color var(--duration-fast),
+    border-color var(--duration-fast);
+}
+
+.giftcard-amount:hover {
+  border-color: var(--color-deep);
+}
+
+.giftcard-amount.is-active {
+  background: var(--color-deep);
+  color: var(--color-surface);
+  border-color: var(--color-deep);
+}
+
+.giftcard-add {
+  align-self: flex-start;
+  padding: 15px 30px;
+  font-weight: 700;
+}
+
+.giftcard-ctas {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.giftcard-ctas .pill {
+  font-size: 12px;
+  padding: 13px 26px;
+}
+
+@media (max-width: 900px) {
+  .giftcard-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,564 @@
+/* ── hero ───────────────────────────────────────────────── */
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: stretch;
+}
+
+.home-hero-copy {
+  padding: 84px 24px 72px var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.home-hero-title {
+  font-size: var(--text-hero);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.home-hero-blurb {
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 460px;
+  color: var(--ink-75);
+  margin: 0;
+}
+
+.home-hero-ctas {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-hero-ctas .pill {
+  padding: 16px 30px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.home-hero-proof {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  color: var(--ink-60);
+  border-top: 1px solid var(--ink-15);
+  padding-top: 22px;
+  max-width: 460px;
+  flex-wrap: wrap;
+}
+
+.home-hero-visual {
+  position: relative;
+  padding: 56px var(--pad-x) 72px 24px;
+}
+
+.home-hero-painting {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  box-shadow: 24px 24px 0 var(--color-block-shadow);
+}
+
+.home-hero-polaroid {
+  cursor: pointer;
+  position: absolute;
+  left: -40px;
+  bottom: 110px;
+  background: var(--color-surface);
+  border: 1px solid var(--ink-15);
+  padding: 10px;
+  transform: rotate(-4deg);
+  box-shadow: 0 14px 30px var(--ink-18);
+  transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.home-hero-polaroid:hover {
+  transform: rotate(-2deg) translateY(-4px);
+}
+
+.home-hero-polaroid img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.home-hero-polaroid div {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  padding: 8px 2px 2px;
+  font-weight: 600;
+}
+
+.home-hero-caption {
+  position: absolute;
+  right: var(--pad-x);
+  bottom: 44px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink-60);
+}
+
+/* ── shared section furniture ───────────────────────────── */
+.home-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.home-section-title {
+  font-size: clamp(32px, 2rem + 1.5vw, 44px);
+  margin: 0;
+}
+
+.home-section-note {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--ink-55);
+}
+
+/* ── shop the gallery ───────────────────────────────────── */
+.home-shop {
+  border-top: 1px solid var(--ink-15);
+  padding: 64px var(--pad-x);
+}
+
+.home-shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.home-shop-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.home-shop-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-shop-media img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.home-shop-card:hover .home-shop-media img {
+  transform: scale(1.03);
+}
+
+.home-shop-number {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--color-surface);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  padding: 7px 12px;
+}
+
+.home-shop-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.home-shop-name {
+  font-size: 26px;
+}
+
+.home-shop-tag {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--color-bronze);
+  white-space: nowrap;
+}
+
+.home-shop-blurb {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink-65);
+}
+
+/* ── italic strip ───────────────────────────────────────── */
+.home-strip {
+  border-top: 1px solid var(--ink-15);
+  border-bottom: 1px solid var(--ink-15);
+  padding: 18px var(--pad-x);
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 36px;
+  justify-content: safe center;
+  font-size: 26px;
+  font-style: italic;
+  color: var(--color-olive);
+}
+
+.home-strip-item {
+  display: inline-flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.home-strip-item button {
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.home-strip-item button:hover {
+  color: var(--color-ink);
+}
+
+.home-strip-star {
+  color: var(--color-gold);
+  font-style: normal;
+}
+
+/* ── recent work ────────────────────────────────────────── */
+.home-recent {
+  padding: 80px var(--pad-x) 40px;
+}
+
+.home-recent-title {
+  font-size: var(--text-section);
+  margin: 0;
+}
+
+.home-recent .home-section-head {
+  margin-bottom: 44px;
+}
+
+.home-recent-all {
+  font-size: 14px;
+}
+
+.home-recent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 28px;
+}
+
+.home-recent-grid .work-card.is-offset {
+  margin-top: 56px;
+}
+
+/* ── jewellery band ─────────────────────────────────────── */
+.home-jewellery {
+  margin: 60px var(--pad-x);
+  background: var(--color-deep);
+  color: var(--color-surface);
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 48px;
+  padding: 64px;
+  align-items: center;
+}
+
+.home-jewellery-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.home-jewellery-kicker {
+  color: var(--color-gold);
+}
+
+.home-jewellery-title {
+  font-size: var(--text-section);
+  line-height: 1.02;
+  margin: 0;
+}
+
+.home-jewellery-title em {
+  color: var(--color-gold);
+}
+
+.home-jewellery-blurb {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--cream-75);
+  margin: 0;
+}
+
+.home-jewellery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.home-jewellery-piece {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-jewellery-piece.is-offset {
+  margin-top: 34px;
+}
+
+.home-jewellery-piece img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 999px;
+  transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.home-jewellery-piece:hover img {
+  transform: scale(1.04);
+}
+
+.home-jewellery-piece div {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--cream-80);
+}
+
+/* ── reviews ────────────────────────────────────────────── */
+.home-reviews {
+  padding: 72px var(--pad-x);
+  border-top: 1px solid var(--ink-15);
+}
+
+.home-reviews .home-section-head {
+  margin-bottom: 40px;
+}
+
+.home-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.review-card {
+  border: 1px solid var(--ink-18);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--color-card);
+  margin: 0;
+}
+
+.review-quote {
+  font-size: 20px;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+.review-who {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--ink-60);
+  margin-top: auto;
+}
+
+/* ── arts week banner ───────────────────────────────────── */
+.home-artsweek {
+  padding: 80px var(--pad-x);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 64px;
+  align-items: center;
+  border-top: 1px solid var(--ink-15);
+}
+
+.home-artsweek-dates {
+  font-size: clamp(72px, 5rem + 3vw, 120px);
+  line-height: 0.95;
+  color: var(--color-bronze);
+}
+
+.home-artsweek-to {
+  font-style: italic;
+  font-size: 0.47em;
+  color: var(--color-ink);
+}
+
+.home-artsweek-where {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+.home-artsweek-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 680px;
+}
+
+.home-artsweek-title {
+  font-size: clamp(24px, 1.4rem + 1.2vw, 32px);
+  line-height: 1.05;
+  margin: 0;
+}
+
+.home-artsweek-blurb {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink-75);
+  margin: 0;
+}
+
+.home-artsweek-ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.home-artsweek-ctas .pill {
+  padding: 14px 26px;
+}
+
+/* ── artist & residency duo ─────────────────────────────── */
+.home-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--ink-15);
+}
+
+.home-artist {
+  padding: 72px 48px 72px var(--pad-x);
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  border-right: 1px solid var(--ink-15);
+}
+
+.home-artist > img {
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 14px 14px 0 var(--color-block-shadow);
+  flex: none;
+}
+
+.home-artist-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.home-duo-title {
+  font-size: clamp(28px, 1.6rem + 1.2vw, 36px);
+  line-height: 1.05;
+  margin: 0;
+}
+
+.home-duo-blurb {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-75);
+  margin: 0;
+}
+
+.home-residency {
+  padding: 72px var(--pad-x) 72px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  background: var(--color-surface-alt);
+}
+
+.home-residency-quote {
+  font-style: italic;
+  font-size: 19px;
+  color: var(--color-olive);
+}
+
+.home-residency-cta {
+  padding: 13px 26px;
+}
+
+/* ── responsive ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero-visual {
+    padding: 0 var(--pad-x) 72px;
+  }
+
+  .home-hero-polaroid {
+    left: 12px;
+  }
+
+  .home-shop-grid,
+  .home-reviews-grid,
+  .home-recent-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-jewellery {
+    grid-template-columns: 1fr;
+    padding: 44px;
+  }
+
+  .home-artsweek {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .home-duo {
+    grid-template-columns: 1fr;
+  }
+
+  .home-artist {
+    border-right: none;
+    border-bottom: 1px solid var(--ink-15);
+    padding-right: var(--pad-x);
+  }
+
+  .home-residency {
+    padding-left: var(--pad-x);
+  }
+}
+
+@media (max-width: 700px) {
+  .home-shop-grid,
+  .home-reviews-grid,
+  .home-recent-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-recent-grid .work-card.is-offset {
+    margin-top: 0;
+  }
+
+  .home-hero-painting {
+    height: 420px;
+  }
+
+  .home-artist {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,355 @@
+/* ── residency landing ──────────────────────────────────── */
+.residency-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  border-bottom: 1px solid var(--ink-15);
+}
+
+.residency-hero-copy {
+  padding: 84px 48px 84px var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  justify-content: center;
+}
+
+.residency-hero-title {
+  font-size: clamp(44px, 2.4rem + 3vw, 80px);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.residency-hero-blurb {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-75);
+  max-width: 520px;
+  margin: 0;
+}
+
+.residency-notice {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--ink-25);
+  padding: 20px 24px;
+  font-size: 14px;
+  line-height: 1.55;
+  max-width: 520px;
+}
+
+.residency-hero-ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.residency-hero-ctas .pill {
+  padding: 16px 30px;
+}
+
+.residency-hero-visual {
+  padding: 56px var(--pad-x) 56px 24px;
+}
+
+.residency-hero-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+  box-shadow: 24px 24px 0 var(--color-block-shadow);
+}
+
+.residency-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--ink-15);
+}
+
+.residency-fact {
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.residency-fact:first-child {
+  padding-left: var(--pad-x);
+}
+
+.residency-fact:last-child {
+  padding-right: var(--pad-x);
+}
+
+.residency-fact:not(:last-child) {
+  border-right: 1px solid var(--ink-15);
+}
+
+.residency-fact-title {
+  font-size: clamp(36px, 2rem + 1.6vw, 52px);
+  color: var(--color-bronze);
+}
+
+.residency-fact-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-70);
+  margin: 0;
+}
+
+.residency-quote-band {
+  background: var(--color-deep);
+  color: var(--color-surface);
+  padding: 72px var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.residency-quote-kicker {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+.residency-quote {
+  font-size: clamp(28px, 1.8rem + 1.4vw, 40px);
+  font-style: italic;
+  line-height: 1.25;
+  max-width: 900px;
+  margin: 0;
+}
+
+.residency-quote-who {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--cream-65);
+}
+
+.residency-quote-cta {
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding: 13px 26px;
+}
+
+/* ── residency info ─────────────────────────────────────── */
+.residency-info {
+  padding: 72px var(--pad-x);
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 72px;
+  align-items: start;
+}
+
+.residency-info-main {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 760px;
+}
+
+.residency-info-title {
+  font-size: clamp(40px, 2.2rem + 2vw, 64px);
+  line-height: 1;
+  margin: 0;
+}
+
+.residency-info-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--ink-80);
+  margin: 0;
+}
+
+.residency-info-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 100px;
+}
+
+.residency-glance {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--ink-25);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.residency-glance-facts {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.residency-glance-booked {
+  border-top: 1px solid var(--ink-25);
+  padding-top: 14px;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+.residency-glance-cta {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 12px;
+}
+
+.residency-info-photo {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 14px 14px 0 var(--color-block-shadow);
+}
+
+/* ── testimonials ───────────────────────────────────────── */
+.testimonials-page {
+  padding: 72px var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.testimonials-intro {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.testimonials-title {
+  font-size: var(--text-display);
+  line-height: 1;
+  margin: 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.testimonial-card {
+  border: 1px solid var(--ink-18);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--color-card);
+  margin: 0;
+}
+
+.testimonial-quote {
+  font-size: 21px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.testimonial-who {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--ink-60);
+  margin-top: auto;
+}
+
+.residency-live-link {
+  font-size: 13px;
+  color: var(--ink-60);
+}
+
+.residency-live-link a {
+  border-bottom: 1px solid var(--ink-40);
+}
+
+/* ── photo gallery ──────────────────────────────────────── */
+.photos-page {
+  padding: 72px var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.photos-intro {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.photos-title {
+  font-size: var(--text-display);
+  line-height: 1;
+  margin: 0;
+}
+
+.photos-blurb {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-70);
+  margin: 0;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.photos-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* ── responsive ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .residency-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .residency-hero-visual {
+    padding: 0 var(--pad-x) 56px;
+  }
+
+  .residency-hero-visual img {
+    min-height: 380px;
+    max-height: 480px;
+  }
+
+  .residency-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .residency-fact {
+    padding: 36px var(--pad-x);
+  }
+
+  .residency-fact:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid var(--ink-15);
+  }
+
+  .residency-info {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .residency-info-aside {
+    position: static;
+  }
+
+  .testimonials-grid,
+  .photos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .photos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
