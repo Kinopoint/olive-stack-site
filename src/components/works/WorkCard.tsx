@@ -1,14 +1,14 @@
-import { navigate } from '../../hooks/useHashRoute';
+import { Link } from '../Link';
 import { paths } from '../../lib/routes';
-import type { Artwork } from '../../data/collections';
+import { imageSrcSet, type Artwork } from '../../data/collections';
+import { availableVariants, shopifyProduct } from '../../data/shopify';
+import { euro } from '../../lib/format';
 import './works.css';
 
 interface WorkCardProps {
   item: Artwork;
   collectionKey: string;
-  /** Extra meta suffix, e.g. " · 01" on the home page. */
   metaSuffix?: string;
-  /** Natural aspect ratio for square jewellery shots instead of the fixed editorial crop. */
   naturalHeight?: boolean;
   className?: string;
 }
@@ -20,28 +20,38 @@ export function WorkCard({
   naturalHeight = false,
   className = '',
 }: WorkCardProps) {
+  const liveProduct = shopifyProduct(collectionKey, item.slug);
+  const sold = !liveProduct?.available;
+  const variants = liveProduct ? availableVariants(liveProduct) : [];
+  const livePrice = variants.length
+    ? `${variants.length > 1 ? 'From ' : ''}${euro(Math.min(...variants.map((variant) => variant.price)))}`
+    : item.price;
+
   return (
-    <button
+    <Link
       className={`work-card${className ? ` ${className}` : ''}`}
-      onClick={() => navigate(paths.product(collectionKey, item.slug))}
+      href={paths.product(collectionKey, item.slug)}
     >
       <div className="work-card-media">
         <img
           src={item.img}
+          srcSet={imageSrcSet(item.img)}
+          sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) 46vw, 31vw"
           alt={item.name}
           loading="lazy"
-          className={`${naturalHeight ? 'is-natural' : ''}${item.sold ? ' is-sold' : ''}`}
+          decoding="async"
+          className={`${naturalHeight ? 'is-natural' : ''}${sold ? ' is-sold' : ''}`}
         />
-        {item.sold && <div className="work-card-sold">SOLD</div>}
+        {sold && <div className="work-card-sold">SOLD</div>}
       </div>
       <div className="work-card-row">
         <div className="serif work-card-name">{item.name}</div>
-        <div className="work-card-price">{item.price}</div>
+        <div className="work-card-price">{livePrice}</div>
       </div>
       <div className="work-card-meta">
         {item.meta}
         {metaSuffix}
       </div>
-    </button>
+    </Link>
   );
 }

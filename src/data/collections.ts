@@ -37,10 +37,20 @@ const FILES = 'https://www.olivestack.com/cdn/shop/files/';
 const SHOP_COLLECTIONS = 'https://www.olivestack.com/cdn/shop/collections/';
 
 export const img = (file: string, width = 900): string =>
-  `${FILES}${file}&width=${width}`;
+  `${FILES}${file}&width=${width}&quality=75`;
 
 export const collectionImg = (file: string, width = 900): string =>
-  `${SHOP_COLLECTIONS}${file}&width=${width}`;
+  `${SHOP_COLLECTIONS}${file}&width=${width}&quality=75`;
+
+export const imageAtWidth = (source: string, width: number): string => {
+  if (/([?&])width=\d+/.test(source)) return source.replace(/([?&])width=\d+/, `$1width=${width}`);
+  return `${source}${source.includes('?') ? '&' : '?'}width=${width}`;
+};
+
+export const imageSrcSet = (
+  source: string,
+  widths: readonly number[] = [320, 480, 640, 900, 1200, 1600],
+): string => widths.map((width) => `${imageAtWidth(source, width)} ${width}w`).join(', ');
 
 type ArtworkInput = Omit<Artwork, 'slug'>;
 

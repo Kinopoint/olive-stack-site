@@ -72,6 +72,25 @@
   margin: 5px 0 0;
 }
 
+.product-variant-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.product-variant-select {
+  width: 100%;
+  border: 1px solid var(--ink-30);
+  border-radius: 0;
+  padding: 14px 16px;
+  background: var(--color-card);
+  color: var(--color-ink);
+  font: 500 14px/1.3 var(--font-sans);
+}
+
 .product-add {
   cursor: pointer;
   background: var(--color-deep);
@@ -99,6 +118,15 @@
 .product-enquire {
   width: 100%;
   padding: 16px 0;
+}
+
+.product-live-link {
+  align-self: flex-start;
+  border-bottom: 1px solid var(--ink-40);
+  padding-bottom: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .product-desc {

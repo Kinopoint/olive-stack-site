@@ -154,6 +154,15 @@
   color: var(--ink-55);
 }
 
+.cart-checkout-error {
+  border-left: 3px solid #8a2e24;
+  padding: 10px 12px;
+  background: #f4e3de;
+  color: #702219;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
 .cart-checkout {
   font-size: 13px;
   letter-spacing: 0.06em;

@@ -153,6 +153,14 @@
   margin: 0;
 }
 
+.contact-form-copy {
+  max-width: 540px;
+  margin: 0;
+  color: var(--ink-75);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;

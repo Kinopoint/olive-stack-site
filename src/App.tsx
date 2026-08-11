@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
-import { useHashRoute } from './hooks/useHashRoute';
+import { useRoute } from './hooks/useRoute';
+import { applyDocumentMetadata } from './lib/metadata';
+import { paths, type Route } from './lib/routes';
 import { CartProvider } from './store/CartContext';
+import { Link } from './components/Link';
 import { Ticker } from './components/layout/Ticker';
 import { Nav } from './components/layout/Nav';
 import { Footer } from './components/layout/Footer';
@@ -18,15 +21,25 @@ import { ResidencyInfoPage } from './pages/ResidencyInfoPage';
 import { TestimonialsPage } from './pages/TestimonialsPage';
 import { PhotosPage } from './pages/PhotosPage';
 import { ContactPage } from './pages/ContactPage';
-import type { Route } from './lib/routes';
 
-function Page({
-  route,
-  onCartOpen,
-}: {
-  route: Route;
-  onCartOpen: () => void;
-}) {
+function NotFoundPage() {
+  return (
+    <section className="collection-empty" aria-labelledby="not-found-heading">
+      <div className="kicker">404 · PAGE NOT FOUND</div>
+      <h1 id="not-found-heading" className="serif collection-empty-note">
+        This page has <em>moved on</em>
+      </h1>
+      <p>
+        The address may be out of date. Return to the gallery or continue browsing Olive’s work.
+      </p>
+      <Link className="pill pill--deep" href={paths.home()}>
+        RETURN TO THE GALLERY
+      </Link>
+    </section>
+  );
+}
+
+function Page({ route, onCartOpen }: { route: Route; onCartOpen: () => void }) {
   switch (route.page) {
     case 'home':
       return <HomePage />;
@@ -58,16 +71,22 @@ function Page({
       return <PhotosPage />;
     case 'contact':
       return <ContactPage />;
+    case 'not-found':
+      return <NotFoundPage />;
   }
 }
 
-export default function App() {
-  const route = useHashRoute();
+export interface AppProps {
+  initialRoute?: Route;
+}
+
+export default function App({ initialRoute }: AppProps) {
+  const route = useRoute(initialRoute);
   const [searchOpen, setSearchOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
 
-  // A navigation closes overlays and returns to the top, as on a page load.
   useEffect(() => {
+    applyDocumentMetadata(route);
     setSearchOpen(false);
     setCartOpen(false);
     window.scrollTo(0, 0);
@@ -75,16 +94,21 @@ export default function App() {
 
   return (
     <CartProvider>
-      <Ticker />
-      <Nav
-        route={route}
-        onToggleSearch={() => setSearchOpen((open) => !open)}
-        onToggleCart={() => setCartOpen((open) => !open)}
-      />
-      <main>
-        <Page route={route} onCartOpen={() => setCartOpen(true)} />
-      </main>
-      <Footer />
+      <div id="app-shell">
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
+        <Ticker />
+        <Nav
+          route={route}
+          onToggleSearch={() => setSearchOpen((open) => !open)}
+          onToggleCart={() => setCartOpen((open) => !open)}
+        />
+        <main id="main-content" tabIndex={-1}>
+          <Page route={route} onCartOpen={() => setCartOpen(true)} />
+        </main>
+        <Footer />
+      </div>
       {searchOpen && <SearchOverlay onClose={() => setSearchOpen(false)} />}
       {cartOpen && <CartDrawer onClose={() => setCartOpen(false)} />}
     </CartProvider>

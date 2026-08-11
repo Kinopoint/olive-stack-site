@@ -54,6 +54,12 @@
   color: var(--color-surface);
 }
 
+.workshop-book:disabled,
+.workshop-book:disabled:hover {
+  background: transparent;
+  color: var(--ink-70);
+}
+
 @media (max-width: 900px) {
   .workshop-row {
     grid-template-columns: 1fr auto;

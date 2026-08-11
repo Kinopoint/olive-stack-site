@@ -1,0 +1,1059 @@
+{
+  "schemaVersion": 1,
+  "products": {
+    "landscapes/watching-over-coumeenoole": {
+      "id": "gid://shopify/Product/16280183046493",
+      "handle": "watching-over-coumeenoole",
+      "title": "Watching Over Coumeenoole",
+      "url": "https://www.olivestack.com/products/watching-over-coumeenoole",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/65084452929885",
+          "title": "Default Title",
+          "price": 3600,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/sea-thrift-and-samphire-mingle": {
+      "id": "gid://shopify/Product/16258667217245",
+      "handle": "sea-thrift-and-samphire-mingle-west-kerry",
+      "title": "Sea Thrift and Samphire Mingle - West Kerry",
+      "url": "https://www.olivestack.com/products/sea-thrift-and-samphire-mingle-west-kerry",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/64966260326749",
+          "title": "Default Title",
+          "price": 3600,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/side-by-side-over-clogher-strand": {
+      "id": "gid://shopify/Product/15544739234141",
+      "handle": "side-by-side-over-clogher-strand",
+      "title": "Side by Side over Clogher Strand",
+      "url": "https://www.olivestack.com/products/side-by-side-over-clogher-strand",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/58207745671517",
+          "title": "Default Title",
+          "price": 1050,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/deenish-and-scariff-wild-and-free": {
+      "id": "gid://shopify/Product/15993920291165",
+      "handle": "deenish-and-scariff-wild-and-free",
+      "title": "Deenish and Scariff, Wild and Free",
+      "url": "https://www.olivestack.com/products/deenish-and-scariff-wild-and-free",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/63823378186589",
+          "title": "Default Title",
+          "price": 1475,
+          "available": false
+        }
+      ]
+    },
+    "landscapes/sea-thrift-along-the-way-ii": {
+      "id": "gid://shopify/Product/14756538286429",
+      "handle": "sea-thrifts-along-the-way-ii",
+      "title": "Sea Thrift along the Way II",
+      "url": "https://www.olivestack.com/products/sea-thrifts-along-the-way-ii",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54828823150941",
+          "title": "Default Title",
+          "price": 5000,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/west-kerry-seaspray": {
+      "id": "gid://shopify/Product/16236849267037",
+      "handle": "west-kerry-seaspray-1",
+      "title": "West Kerry Seaspray",
+      "url": "https://www.olivestack.com/products/west-kerry-seaspray-1",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/64869547671901",
+          "title": "Default Title",
+          "price": 550,
+          "available": false
+        }
+      ]
+    },
+    "landscapes/clogher-pace": {
+      "id": "gid://shopify/Product/15746886041949",
+      "handle": "clogher-pace",
+      "title": "Clogher Pace",
+      "url": "https://www.olivestack.com/products/clogher-pace",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62571922751837",
+          "title": "Default Title",
+          "price": 1700,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/out-west": {
+      "id": "gid://shopify/Product/16145498964317",
+      "handle": "out-west",
+      "title": "Out West",
+      "url": "https://www.olivestack.com/products/out-west",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/64431234842973",
+          "title": "Default Title",
+          "price": 3600,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/rattoo-from-ladies-walk": {
+      "id": "gid://shopify/Product/14940352315741",
+      "handle": "rattoo-from-ladies-walk",
+      "title": "Rattoo from Ladies Walk",
+      "url": "https://www.olivestack.com/products/rattoo-from-ladies-walk",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/55605684896093",
+          "title": "Default Title",
+          "price": 2200,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/kerry-ash-grove": {
+      "id": "gid://shopify/Product/14940698214749",
+      "handle": "kerry-ash-grove",
+      "title": "Kerry Ash Grove",
+      "url": "https://www.olivestack.com/products/kerry-ash-grove",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/55607042998621",
+          "title": "Default Title",
+          "price": 1500,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/keepers-of-the-estuary-ii": {
+      "id": "gid://shopify/Product/14756574396765",
+      "handle": "keepers-of-the-estuary-ii",
+      "title": "Keepers of the Estuary II",
+      "url": "https://www.olivestack.com/products/keepers-of-the-estuary-ii",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54829009273181",
+          "title": "Default Title",
+          "price": 700,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/sunset-sonata-i": {
+      "id": "gid://shopify/Product/14756462756189",
+      "handle": "sunset-sonata-i",
+      "title": "Sunset Sonata I",
+      "url": "https://www.olivestack.com/products/sunset-sonata-i",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54828414435677",
+          "title": "Default Title",
+          "price": 1000,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/beenconeen-beckons": {
+      "id": "gid://shopify/Product/14756501782877",
+      "handle": "beenconeen-beckons",
+      "title": "Beenconeen Beckons",
+      "url": "https://www.olivestack.com/products/beenconeen-beckons",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54828594004317",
+          "title": "Default Title",
+          "price": 3500,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/clifftop-abundance-meenogahane": {
+      "id": "gid://shopify/Product/14756518330717",
+      "handle": "clifftop-abundance-meenogahane",
+      "title": "Clifftop Abundance Meenogahane",
+      "url": "https://www.olivestack.com/products/clifftop-abundance-meenogahane",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54828691915101",
+          "title": "Default Title",
+          "price": 3500,
+          "available": true
+        }
+      ]
+    },
+    "landscapes/dimming-of-the-day": {
+      "id": "gid://shopify/Product/14940321644893",
+      "handle": "dimming-of-the-day",
+      "title": "Dimming of the Day",
+      "url": "https://www.olivestack.com/products/dimming-of-the-day",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/55605545009501",
+          "title": "Default Title",
+          "price": 2900,
+          "available": true
+        }
+      ]
+    },
+    "interiors/william-street-listowel": {
+      "id": "gid://shopify/Product/15723718902109",
+      "handle": "william-street-listowel-1",
+      "title": "William Street Listowel",
+      "url": "https://www.olivestack.com/products/william-street-listowel-1",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62449527292253",
+          "title": "Default Title",
+          "price": 500,
+          "available": true
+        }
+      ]
+    },
+    "interiors/lovely-listowel": {
+      "id": "gid://shopify/Product/15724473057629",
+      "handle": "lovely-listowel",
+      "title": "Lovely Listowel",
+      "url": "https://www.olivestack.com/products/lovely-listowel",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62455594123613",
+          "title": "Default Title",
+          "price": 400,
+          "available": true
+        }
+      ]
+    },
+    "interiors/st-john-s-and-st-mary-s": {
+      "id": "gid://shopify/Product/15783956447581",
+      "handle": "st-johns-and-st-marys",
+      "title": "St John's and St Mary's",
+      "url": "https://www.olivestack.com/products/st-johns-and-st-marys",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62743339499869",
+          "title": "Default Title",
+          "price": 600,
+          "available": true
+        }
+      ]
+    },
+    "interiors/fireside-companions": {
+      "id": "gid://shopify/Product/14757205115229",
+      "handle": "fireside-companions",
+      "title": "Fireside Companions - Oil on Panel",
+      "url": "https://www.olivestack.com/products/fireside-companions",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54831639134557",
+          "title": "Default Title",
+          "price": 1850,
+          "available": true
+        }
+      ]
+    },
+    "interiors/dining-room-blue": {
+      "id": "gid://shopify/Product/14757436916061",
+      "handle": "dining-room-blue",
+      "title": "Dining Room Blue",
+      "url": "https://www.olivestack.com/products/dining-room-blue",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54832771989853",
+          "title": "Default Title",
+          "price": 650,
+          "available": true
+        }
+      ]
+    },
+    "interiors/powder-room-blues": {
+      "id": "gid://shopify/Product/14757413290333",
+      "handle": "powder-room-blues",
+      "title": "Powder Room Blues",
+      "url": "https://www.olivestack.com/products/powder-room-blues",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54832659562845",
+          "title": "Default Title",
+          "price": 650,
+          "available": true
+        }
+      ]
+    },
+    "interiors/the-other-half": {
+      "id": "gid://shopify/Product/14757241684317",
+      "handle": "the-other-half",
+      "title": "The Other Half - Oil on Panel",
+      "url": "https://www.olivestack.com/products/the-other-half",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54831814050141",
+          "title": "Default Title",
+          "price": 1350,
+          "available": true
+        }
+      ]
+    },
+    "interiors/tea-time": {
+      "id": "gid://shopify/Product/14757605540189",
+      "handle": "tea-time",
+      "title": "Tea Time",
+      "url": "https://www.olivestack.com/products/tea-time",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54833504813405",
+          "title": "Default Title",
+          "price": 900,
+          "available": true
+        }
+      ]
+    },
+    "interiors/light-and-life": {
+      "id": "gid://shopify/Product/14757410242909",
+      "handle": "light-and-life",
+      "title": "Light and Life",
+      "url": "https://www.olivestack.com/products/light-and-life",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54832637313373",
+          "title": "Default Title",
+          "price": 1350,
+          "available": true
+        }
+      ]
+    },
+    "interiors/fireside-reflection": {
+      "id": "gid://shopify/Product/14757329371485",
+      "handle": "fireside-reflection",
+      "title": "Fireside Reflection",
+      "url": "https://www.olivestack.com/products/fireside-reflection",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54832163979613",
+          "title": "Default Title",
+          "price": 1350,
+          "available": true
+        }
+      ]
+    },
+    "interiors/come-dine-with-me": {
+      "id": "gid://shopify/Product/14757265310045",
+      "handle": "come-dine-with-me",
+      "title": "Come Dine with Me",
+      "url": "https://www.olivestack.com/products/come-dine-with-me",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54831881552221",
+          "title": "Default Title",
+          "price": 900,
+          "available": true
+        }
+      ]
+    },
+    "interiors/the-good-room": {
+      "id": "gid://shopify/Product/14757467685213",
+      "handle": "the-good-room",
+      "title": "The Good Room",
+      "url": "https://www.olivestack.com/products/the-good-room",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54832928391517",
+          "title": "Default Title",
+          "price": 0,
+          "available": false
+        }
+      ]
+    },
+    "prints/deenish-and-scariff": {
+      "id": "gid://shopify/Product/16168361558365",
+      "handle": "deenish-and-scariff",
+      "title": "Deenish and Scariff",
+      "url": "https://www.olivestack.com/products/deenish-and-scariff",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/64570554057053",
+          "title": "Default Title",
+          "price": 240,
+          "available": true
+        }
+      ]
+    },
+    "prints/coumeenoole-west-kerry": {
+      "id": "gid://shopify/Product/16168348221789",
+      "handle": "coumeenoole-west-kerry",
+      "title": "Coumeenoole, West Kerry",
+      "url": "https://www.olivestack.com/products/coumeenoole-west-kerry",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/64570531021149",
+          "title": "Default Title",
+          "price": 290,
+          "available": true
+        }
+      ]
+    },
+    "prints/peace-and-pace-of-clogher": {
+      "id": "gid://shopify/Product/15752388018525",
+      "handle": "clogher-pace-1",
+      "title": "Peace and Pace of Clogher",
+      "url": "https://www.olivestack.com/products/clogher-pace-1",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62891503649117",
+          "title": "Unframed",
+          "price": 300,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62891503681885",
+          "title": "Framed",
+          "price": 430,
+          "available": true
+        }
+      ]
+    },
+    "prints/kerry-girls-meet-the-three-sisters": {
+      "id": "gid://shopify/Product/15717692473693",
+      "handle": "dingle-girls-meet-the-three-sisters",
+      "title": "Kerry Girls, Meet the Three Sisters",
+      "url": "https://www.olivestack.com/products/dingle-girls-meet-the-three-sisters",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62891592024413",
+          "title": "Unframed",
+          "price": 300,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62891592057181",
+          "title": "Framed",
+          "price": 430,
+          "available": true
+        }
+      ]
+    },
+    "prints/sea-thrift-along-the-way": {
+      "id": "gid://shopify/Product/15516495577437",
+      "handle": "sea-thrift-along-the-way-new",
+      "title": "Sea Thrift Along the Way",
+      "url": "https://www.olivestack.com/products/sea-thrift-along-the-way-new",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62891599888733",
+          "title": "Unframed",
+          "price": 290,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62891599921501",
+          "title": "Framed",
+          "price": 410,
+          "available": true
+        }
+      ]
+    },
+    "prints/beenconeen-beckons": {
+      "id": "gid://shopify/Product/15752411939165",
+      "handle": "beenconeen-beckons-1",
+      "title": "Beenconeen Beckons",
+      "url": "https://www.olivestack.com/products/beenconeen-beckons-1",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62917804425565",
+          "title": "Unframed / Limited Edition Print / 52 x 84.4cm (20.5\" x 33.25\")",
+          "price": 300,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62917804458333",
+          "title": "Framed / Limited Edition Print / 52 x 84.4cm (20.5\" x 33.25\")",
+          "price": 430,
+          "available": true
+        }
+      ]
+    },
+    "prints/an-fear-marbh": {
+      "id": "gid://shopify/Product/15516512125277",
+      "handle": "an-fear-marbh-new",
+      "title": "An Fear Marbh",
+      "url": "https://www.olivestack.com/products/an-fear-marbh-new",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62891469308253",
+          "title": "Unframed",
+          "price": 240,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62894586823005",
+          "title": "White Frame",
+          "price": 375,
+          "available": true
+        }
+      ]
+    },
+    "prints/boats-of-ross-castle": {
+      "id": "gid://shopify/Product/15515911061853",
+      "handle": "boats-of-ross-castle",
+      "title": "Boats of Ross Castle",
+      "url": "https://www.olivestack.com/products/boats-of-ross-castle",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62891318083933",
+          "title": "Unframed",
+          "price": 240,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62894236893533",
+          "title": "Black Frame",
+          "price": 330,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62894260420957",
+          "title": "White Frame",
+          "price": 360,
+          "available": true
+        }
+      ]
+    },
+    "prints/hawthorn-harmony": {
+      "id": "gid://shopify/Product/14723291513181",
+      "handle": "hawthorn-harmony",
+      "title": "Hawthorn Harmony - Limited Edition Print",
+      "url": "https://www.olivestack.com/products/hawthorn-harmony",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54672966910301",
+          "title": "Default Title",
+          "price": 190,
+          "available": true
+        }
+      ]
+    },
+    "prints/ballybunion-reflection": {
+      "id": "gid://shopify/Product/9553623646557",
+      "handle": "ballybunion-reflection",
+      "title": "Ballybunion Reflection",
+      "url": "https://www.olivestack.com/products/ballybunion-reflection",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/52384617562461",
+          "title": "Default Title",
+          "price": 170,
+          "available": true
+        }
+      ]
+    },
+    "prints/carrigafoyle-castle": {
+      "id": "gid://shopify/Product/9553459315037",
+      "handle": "carrigafoyle-castle",
+      "title": "Carrigafoyle Castle - Limited Edition Print",
+      "url": "https://www.olivestack.com/products/carrigafoyle-castle",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62897263575389",
+          "title": "Unframed",
+          "price": 200,
+          "available": true
+        }
+      ]
+    },
+    "prints/lislaughtin-abbey-at-dusk": {
+      "id": "gid://shopify/Product/14715628192093",
+      "handle": "lislaughtin-abbey-at-dusk",
+      "title": "Lislaughtin Abbey at Dusk",
+      "url": "https://www.olivestack.com/products/lislaughtin-abbey-at-dusk",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54636882100573",
+          "title": "Default Title",
+          "price": 200,
+          "available": true
+        }
+      ]
+    },
+    "prints/mount-brandon-from-kerry-head": {
+      "id": "gid://shopify/Product/9553681219933",
+      "handle": "mount-brandon-from-kerry-head",
+      "title": "Mount Brandon from Kerry Head - Limited Edition Print",
+      "url": "https://www.olivestack.com/products/mount-brandon-from-kerry-head",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62897156391261",
+          "title": "Unframed",
+          "price": 200,
+          "available": true
+        }
+      ]
+    },
+    "prints/big-bridge-in-blue": {
+      "id": "gid://shopify/Product/9553504010589",
+      "handle": "big-bridge-in-blue",
+      "title": "Big Bridge in Blue",
+      "url": "https://www.olivestack.com/products/big-bridge-in-blue",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62891690721629",
+          "title": "Unframed",
+          "price": 255,
+          "available": true
+        }
+      ]
+    },
+    "prints/the-cow-and-bull-from-bunavalla": {
+      "id": "gid://shopify/Product/16168371421533",
+      "handle": "the-cow-and-bull-from-bunavalla",
+      "title": "The Cow and Bull from Bunavalla",
+      "url": "https://www.olivestack.com/products/the-cow-and-bull-from-bunavalla",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/64570583449949",
+          "title": "Default Title",
+          "price": 80,
+          "available": true
+        }
+      ]
+    },
+    "pendants/blue-lime-green-pendant": {
+      "id": "gid://shopify/Product/15725534576989",
+      "handle": "blue-and-lime-green-pendant",
+      "title": "Blue and Lime Green Pendant",
+      "url": "https://www.olivestack.com/products/blue-and-lime-green-pendant",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/62460695445853",
+          "title": "Default Title",
+          "price": 115,
+          "available": false
+        }
+      ]
+    },
+    "pendants/oval-mosaic-pendant": {
+      "id": "gid://shopify/Product/15710296703325",
+      "handle": "oval-mosaic-pendant",
+      "title": "Oval Mosaic Pendant",
+      "url": "https://www.olivestack.com/products/oval-mosaic-pendant",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/58887485063517",
+          "title": "Default Title",
+          "price": 145,
+          "available": true
+        }
+      ]
+    },
+    "pendants/mosaic-pendant": {
+      "id": "gid://shopify/Product/15424314442077",
+      "handle": "mosaic-pendant-21",
+      "title": "Mosaic Pendant",
+      "url": "https://www.olivestack.com/products/mosaic-pendant-21",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/57677088358749",
+          "title": "Default Title",
+          "price": 120,
+          "available": true
+        }
+      ]
+    },
+    "pendants/large-mosaic-pendant": {
+      "id": "gid://shopify/Product/9965347307869",
+      "handle": "large-mosaic-pendant-❤️",
+      "title": "Large Mosaic Pendant ❤️",
+      "url": "https://www.olivestack.com/products/large-mosaic-pendant-%E2%9D%A4%EF%B8%8F",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54220605981021",
+          "title": "Default Title",
+          "price": 180,
+          "available": true
+        }
+      ]
+    },
+    "pendants/mosaic-pendant-ii": {
+      "id": "gid://shopify/Product/14945001046365",
+      "handle": "mosaic-pendant-19",
+      "title": "Mosaic Pendant",
+      "url": "https://www.olivestack.com/products/mosaic-pendant-19",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/55624419049821",
+          "title": "Default Title",
+          "price": 140,
+          "available": true
+        }
+      ]
+    },
+    "pendants/round-pendant": {
+      "id": "gid://shopify/Product/9836177490269",
+      "handle": "round-pendant",
+      "title": "Round Pendant",
+      "url": "https://www.olivestack.com/products/round-pendant",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/53619488588125",
+          "title": "Default Title",
+          "price": 120,
+          "available": true
+        }
+      ]
+    },
+    "pendants/large-mandala-pendant": {
+      "id": "gid://shopify/Product/9965260603741",
+      "handle": "large-mandala-pendant",
+      "title": "Large Mandala Pendant",
+      "url": "https://www.olivestack.com/products/large-mandala-pendant",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/54220153258333",
+          "title": "Default Title",
+          "price": 175,
+          "available": true
+        }
+      ]
+    },
+    "pendants/heart-pendant": {
+      "id": "gid://shopify/Product/9632557072733",
+      "handle": "cat-pendant",
+      "title": "Heart Pendant",
+      "url": "https://www.olivestack.com/products/cat-pendant",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/52714363257181",
+          "title": "Default Title",
+          "price": 125,
+          "available": true
+        }
+      ]
+    },
+    "pendants/large-mosaic-pendant-ii": {
+      "id": "gid://shopify/Product/9890797617501",
+      "handle": "large-mosaic-pendant",
+      "title": "Large Mosaic Pendant",
+      "url": "https://www.olivestack.com/products/large-mosaic-pendant",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/53876381450589",
+          "title": "Default Title",
+          "price": 165,
+          "available": true
+        }
+      ]
+    }
+  },
+  "workshops": {
+    "cyanotype-nature-printing": {
+      "id": "gid://shopify/Product/15421446062429",
+      "handle": "cyanotype-nature-printing-bring-listowel-home",
+      "title": "Cyanotype Nature Printing: Bring Listowel Home- Friday 31st July 2026",
+      "url": "https://www.olivestack.com/products/cyanotype-nature-printing-bring-listowel-home",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/57662063804765",
+          "title": "Default Title",
+          "price": 85,
+          "available": false
+        }
+      ]
+    },
+    "explore-creativity-with-glass": {
+      "id": "gid://shopify/Product/15374049968477",
+      "handle": "fluid-double-reverse-mosaic",
+      "title": "Explore Creativity with Glass. Mosaic Technique Workshop with Solly - Sat 1st & Sun 2nd Aug 2026",
+      "url": "https://www.olivestack.com/products/fluid-double-reverse-mosaic",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/57470119412061",
+          "title": "Default Title",
+          "price": 280,
+          "available": false
+        }
+      ]
+    },
+    "micro-mosaic-jewellery": {
+      "id": "gid://shopify/Product/15381524873565",
+      "handle": "micro-mosaic-jewellery-workshop-with-olive-stack",
+      "title": "*Fully Booked* Micro Mosaic Jewellery Workshop with Olive Stack - Mon Aug 3rd 2026",
+      "url": "https://www.olivestack.com/products/micro-mosaic-jewellery-workshop-with-olive-stack",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/57510026608989",
+          "title": "Default Title",
+          "price": 140,
+          "available": false
+        }
+      ]
+    },
+    "the-cailleach-within": {
+      "id": null,
+      "handle": "the-cailleach-within-felted-crone-wisdom-keeper",
+      "title": "the-cailleach-within",
+      "url": "https://www.olivestack.com/products/the-cailleach-within-felted-crone-wisdom-keeper",
+      "available": false,
+      "archived": true,
+      "variants": []
+    },
+    "capturing-listowel": {
+      "id": "gid://shopify/Product/15973153177949",
+      "handle": "capturing-listowel-with-jean-cauthen",
+      "title": "Capturing Listowel, Oil Painting with Jean Cauthen - Wed 5th Aug 2026",
+      "url": "https://www.olivestack.com/products/capturing-listowel-with-jean-cauthen",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/63710469718365",
+          "title": "Default Title",
+          "price": 110,
+          "available": false
+        }
+      ]
+    },
+    "willow-and-paper-lanterns": {
+      "id": "gid://shopify/Product/16240822550877",
+      "handle": "willow-and-paper-lanterns",
+      "title": "Willow and Paper Lanterns with Kathleen Doody - Thurs 6th Aug 2026",
+      "url": "https://www.olivestack.com/products/willow-and-paper-lanterns",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/64896363331933",
+          "title": "Default Title",
+          "price": 150,
+          "available": false
+        }
+      ]
+    },
+    "tone-and-colour": {
+      "id": "gid://shopify/Product/16251157676381",
+      "handle": "improve-your-use-of-tone-and-colour",
+      "title": "Enhance your use of Tone and Colour with Brendan Campbell - Fri 7th Aug 2026",
+      "url": "https://www.olivestack.com/products/improve-your-use-of-tone-and-colour",
+      "available": false,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/64931124183389",
+          "title": "Default Title",
+          "price": 70,
+          "available": false
+        }
+      ]
+    }
+  },
+  "giftCards": {
+    "gallery": {
+      "id": "gid://shopify/Product/14872926224733",
+      "handle": "olive-stack-gallery-gift-card",
+      "title": "Gallery Gift Card",
+      "url": "https://www.olivestack.com/products/olive-stack-gallery-gift-card",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/58107955773789",
+          "title": "€25",
+          "price": 25,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/55325330571613",
+          "title": "€50.00",
+          "price": 50,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/55325330604381",
+          "title": "€100.00",
+          "price": 100,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/55325335060829",
+          "title": "€200.00",
+          "price": 200,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/55325335748957",
+          "title": "€300.00",
+          "price": 300,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/55325336961373",
+          "title": "€400.00",
+          "price": 400,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/55325335355741",
+          "title": "€500.00",
+          "price": 500,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62878511333725",
+          "title": "€1,000.00",
+          "price": 1000,
+          "available": true
+        }
+      ]
+    },
+    "artsWeek": {
+      "id": "gid://shopify/Product/15706171244893",
+      "handle": "listowel-visual-arts-week-gift-card",
+      "title": "Listowel Visual Arts Week Gift Card",
+      "url": "https://www.olivestack.com/products/listowel-visual-arts-week-gift-card",
+      "available": true,
+      "archived": false,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/58867443990877",
+          "title": "€50.00",
+          "price": 50,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/58867444023645",
+          "title": "€100.00",
+          "price": 100,
+          "available": true
+        },
+        {
+          "id": "gid://shopify/ProductVariant/58867457851741",
+          "title": "€200.00",
+          "price": 200,
+          "available": true
+        }
+      ]
+    }
+  },
+  "syncedAt": "2026-08-11T09:20:26.183Z"
+}

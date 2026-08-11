@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import { navigate } from '../../hooks/useHashRoute';
+import { Link } from '../Link';
 import { paths } from '../../lib/routes';
+
+const NEWSLETTER_URL = 'https://www.olivestack.com/pages/contact#contact_form';
 
 const SHOP_LINKS = [
   { label: 'Paintings', path: paths.collection('landscapes') },
@@ -25,73 +26,61 @@ const POLICY_LINKS = [
 ];
 
 export function Footer() {
-  const [joined, setJoined] = useState(false);
-
   return (
     <footer className="footer">
       <div className="footer-grid">
         <div className="footer-brand">
-          <div className="serif footer-logo">
+          <Link className="serif footer-logo" href={paths.home()}>
             Olive Stack <em className="footer-logo-em">Gallery</em>
-          </div>
+          </Link>
           <div className="footer-blurb">
             Subscribe to the newsletter for new work, workshops and Arts Week news.
           </div>
-          <form
-            className="footer-signup"
-            onSubmit={(e) => {
-              e.preventDefault();
-              setJoined(true);
-            }}
-          >
-            <input placeholder="Email address" type="email" aria-label="Email address" />
-            <button type="submit">{joined ? '✓' : 'JOIN'}</button>
-          </form>
+          <a className="footer-signup footer-signup-link" href={NEWSLETTER_URL}>
+            <span>Email updates</span>
+            <strong>JOIN →</strong>
+          </a>
         </div>
 
-        <div className="footer-col">
+        <nav className="footer-col" aria-label="Shop">
           <div className="footer-heading">SHOP</div>
-          {SHOP_LINKS.map((l) => (
-            <button key={l.label} onClick={() => navigate(l.path)}>
-              {l.label}
-            </button>
+          {SHOP_LINKS.map((link) => (
+            <Link key={link.label} href={link.path}>
+              {link.label}
+            </Link>
           ))}
-        </div>
+        </nav>
 
-        <div className="footer-col">
+        <nav className="footer-col" aria-label="Experience">
           <div className="footer-heading">EXPERIENCE</div>
-          {EXPERIENCE_LINKS.map((l) => (
-            <button key={l.label} onClick={() => navigate(l.path)}>
-              {l.label}
-            </button>
+          {EXPERIENCE_LINKS.map((link) => (
+            <Link key={link.label} href={link.path}>
+              {link.label}
+            </Link>
           ))}
-        </div>
+        </nav>
 
         <div className="footer-col">
           <div className="footer-heading">VISIT</div>
           <div className="footer-address">
-            Main Street, Listowel,
+            4 Main Street, Listowel,
             <br />
-            Co. Kerry, Ireland
+            Co. Kerry, V31 HW30, Ireland
           </div>
-          <a href="https://www.instagram.com/olivestackgallery/" target="_blank" rel="noreferrer">
-            Instagram
-          </a>
-          <a href="https://www.facebook.com/OliveStackGallery" target="_blank" rel="noreferrer">
-            Facebook
-          </a>
+          <a href="https://www.instagram.com/olivestackgallery/">Instagram</a>
+          <a href="https://www.facebook.com/OliveStackGallery">Facebook</a>
         </div>
       </div>
 
       <div className="footer-legal">
-        <div>© 2026 Olive Stack Gallery</div>
-        <div className="footer-policies">
-          {POLICY_LINKS.map((l) => (
-            <a key={l.label} href={l.href} target="_blank" rel="noreferrer">
-              {l.label}
+        <div>© {new Date().getFullYear()} Olive Stack Gallery</div>
+        <nav className="footer-policies" aria-label="Policies">
+          {POLICY_LINKS.map((link) => (
+            <a key={link.label} href={link.href}>
+              {link.label}
             </a>
           ))}
-        </div>
+        </nav>
       </div>
     </footer>
   );

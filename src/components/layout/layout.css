@@ -20,24 +20,30 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 24px;
   padding: 18px var(--pad-x);
   border-bottom: 1px solid var(--ink-15);
   position: sticky;
   top: 0;
   background: var(--color-surface);
   z-index: 50;
-  flex-wrap: wrap;
 }
 
 .nav-brand {
   font-size: 28px;
-  cursor: pointer;
+  white-space: nowrap;
 }
 
 .nav-brand em {
   color: var(--color-olive);
+}
+
+.nav-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex: 1;
 }
 
 .nav-links {
@@ -50,7 +56,6 @@
 
 .nav-item {
   position: relative;
-  padding: 12px 0;
 }
 
 .nav-link {
@@ -77,7 +82,7 @@
   background: var(--color-card);
   border: 1px solid var(--ink-18);
   box-shadow: 0 18px 40px var(--ink-18);
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 11px;
   padding: 22px 26px;
@@ -85,15 +90,14 @@
   min-width: 220px;
 }
 
+.nav-menu[hidden] {
+  display: none;
+}
+
 .nav-menu--wide {
   flex-direction: row;
   gap: 36px;
   padding: 26px 30px;
-}
-
-.nav-item:hover .nav-menu,
-.nav-item:focus-within .nav-menu {
-  display: flex;
 }
 
 .nav-menu-col {
@@ -104,7 +108,6 @@
 }
 
 .nav-menu-link {
-  cursor: pointer;
   white-space: nowrap;
   font-size: 14px;
   font-weight: 500;
@@ -114,12 +117,27 @@
   color: var(--color-olive);
 }
 
+.nav-menu-link[aria-current='page'] {
+  color: var(--color-olive);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .nav-actions {
   display: flex;
   gap: 20px;
   font-size: 14px;
   font-weight: 500;
   align-items: center;
+}
+
+.nav-mobile-toggle {
+  display: none;
+  border: 1px solid var(--ink-30);
+  border-radius: 99px;
+  padding: 7px 13px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .nav-cart {
@@ -164,7 +182,7 @@
   font-size: 30px;
 }
 
-.footer-logo-em {
+.footer-logo .footer-logo-em {
   color: var(--color-gold);
 }
 
@@ -180,6 +198,24 @@
   border-radius: 99px;
   overflow: hidden;
   max-width: 340px;
+}
+
+.footer-signup-link {
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 18px;
+  color: var(--cream-75);
+  font-size: 13px;
+}
+
+.footer-signup-link strong {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  background: var(--color-gold);
+  color: var(--color-ink);
+  padding: 13px 22px;
+  letter-spacing: 0.05em;
 }
 
 .footer-signup input {
@@ -214,12 +250,6 @@
   align-items: flex-start;
 }
 
-.footer-col button {
-  cursor: pointer;
-  transition: color var(--duration-fast);
-}
-
-.footer-col button:hover,
 .footer-col a:hover {
   color: var(--color-gold);
 }
@@ -242,7 +272,7 @@
   justify-content: space-between;
   padding-top: 22px;
   font-size: 12px;
-  color: var(--cream-50);
+  color: var(--cream-60);
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -262,15 +292,75 @@
 
 @media (max-width: 768px) {
   .nav {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 10px;
+    padding-block: 12px;
+  }
+
+  .nav-brand {
+    font-size: 24px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .nav-cart {
+    padding: 6px 12px;
+    font-size: 13px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .nav-mobile-toggle {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .nav-panel {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    border-top: 1px solid var(--ink-15);
+    padding-top: 14px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+
+  .nav-panel.is-open {
+    display: flex;
   }
 
   .nav-links {
-    order: 3;
+    flex-direction: column;
+    align-items: stretch;
     width: 100%;
-    justify-content: center;
-    gap: 18px;
+    gap: 4px;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+  }
+
+  .nav-item > .nav-link {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-actions {
+    border-top: 1px solid var(--ink-15);
+    padding-top: 12px;
     flex-wrap: wrap;
+  }
+
+  .nav-actions .nav-link {
+    width: auto;
   }
 
   .nav-menu--wide {
@@ -279,10 +369,22 @@
   }
 
   .nav-menu {
-    left: 50%;
-    transform: translateX(-50%);
-    max-height: 60vh;
-    overflow: auto;
+    position: static;
+    transform: none;
+    width: 100%;
+    min-width: 0;
+    max-height: none;
+    box-shadow: none;
+    margin-bottom: 8px;
+    padding: 18px;
+  }
+
+  .nav-menu-col {
+    min-width: 0;
+  }
+
+  .nav-menu-link {
+    white-space: normal;
   }
 }
 

@@ -5,16 +5,23 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "prebuild": "npm run sync:shopify",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "check:dist": "node scripts/check-dist.mjs",
     "preview": "vite preview",
+    "sync:shopify": "node scripts/sync-shopify-catalog.mjs",
     "test": "vitest run",
+    "test:integration": "node scripts/verify-shopify.mjs",
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",

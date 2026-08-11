@@ -218,13 +218,13 @@
   align-items: center;
 }
 
-.home-strip-item button {
+.home-strip-item a {
   cursor: pointer;
   font: inherit;
   color: inherit;
 }
 
-.home-strip-item button:hover {
+.home-strip-item a:hover {
   color: var(--color-ink);
 }
 
@@ -281,7 +281,7 @@
 }
 
 .home-jewellery-kicker {
-  color: var(--color-gold);
+  color: var(--color-gold-soft);
 }
 
 .home-jewellery-title {

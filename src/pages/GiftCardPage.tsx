@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { navigate } from '../hooks/useHashRoute';
+import { Link } from '../components/Link';
+import { artsWeekPhase } from '../data/events';
+import { availableVariants, shopifyGiftCard } from '../data/shopify';
 import { paths } from '../lib/routes';
+import { euro } from '../lib/format';
 import { useCart } from '../store/CartContext';
 import './giftcard.css';
 
-const AMOUNTS = [50, 100, 150, 250];
-const DEFAULT_AMOUNT = 100;
 const GIFT_CARD_IMG =
   'https://www.olivestack.com/cdn/shop/collections/Hawthorn_Harmony.jpg?v=1763732386&width=400';
 
@@ -15,17 +16,25 @@ interface GiftCardPageProps {
 
 export function GiftCardPage({ onAdded }: GiftCardPageProps) {
   const cart = useCart();
-  const [amount, setAmount] = useState(DEFAULT_AMOUNT);
-
-  const giftName = `Gallery Gift Card · €${amount}`;
-  const inCart = cart.has(giftName);
+  const giftCard = shopifyGiftCard('gallery');
+  const variants = availableVariants(giftCard);
+  const defaultVariant = variants.find((variant) => variant.price === 100) || variants[0];
+  const [selectedVariantId, setSelectedVariantId] = useState(defaultVariant?.id || '');
+  const selectedVariant =
+    variants.find((variant) => variant.id === selectedVariantId) || defaultVariant;
+  const inCart = selectedVariant ? cart.has(selectedVariant.id) : false;
+  const artsWeekEnded = artsWeekPhase() === 'past';
 
   const addGift = () => {
+    if (!selectedVariant) return;
     if (!inCart) {
       cart.add({
-        name: giftName,
-        price: `€${amount}`,
-        amount,
+        id: selectedVariant.id,
+        variantId: selectedVariant.id,
+        productUrl: giftCard.url,
+        name: `Gallery Gift Card · ${euro(selectedVariant.price)}`,
+        price: euro(selectedVariant.price),
+        amount: selectedVariant.price,
         meta: 'GIFT CARD · DELIVERED BY EMAIL',
         img: GIFT_CARD_IMG,
       });
@@ -54,41 +63,55 @@ export function GiftCardPage({ onAdded }: GiftCardPageProps) {
             “Very easy to navigate website and voucher received promptly.”{' '}
             <span className="giftcard-review-tag">· VERIFIED REVIEW</span>
           </div>
-          <div className="giftcard-amounts">
-            {AMOUNTS.map((a) => (
-              <button
-                key={a}
-                className={`giftcard-amount${a === amount ? ' is-active' : ''}`}
-                onClick={() => setAmount(a)}
-              >
-                €{a}
-              </button>
-            ))}
-          </div>
-          <button className="pill pill--deep giftcard-add" onClick={addGift}>
-            {inCart ? 'IN CART ✓' : `ADD €${amount} CARD TO CART`}
+          {variants.length > 0 ? (
+            <div className="giftcard-amounts" role="group" aria-label="Gift card amount">
+              {variants.map((variant) => (
+                <button
+                  key={variant.id}
+                  className={`giftcard-amount${variant.id === selectedVariant?.id ? ' is-active' : ''}`}
+                  onClick={() => setSelectedVariantId(variant.id)}
+                  aria-pressed={variant.id === selectedVariant?.id}
+                >
+                  {euro(variant.price)}
+                </button>
+              ))}
+            </div>
+          ) : (
+            <p className="giftcard-unavailable">Gift cards are temporarily unavailable online.</p>
+          )}
+          <button
+            className="pill pill--deep giftcard-add"
+            onClick={addGift}
+            disabled={!selectedVariant}
+          >
+            {!selectedVariant
+              ? 'CURRENTLY UNAVAILABLE'
+              : inCart
+                ? 'IN CART ✓'
+                : `ADD ${euro(selectedVariant.price)} CARD TO CART`}
           </button>
+          <a className="giftcard-live-link" href={giftCard.url}>
+            View gift card details on the secure shop →
+          </a>
         </div>
 
         <div className="giftcard-card giftcard-card--artsweek">
           <div className="menu-kicker">ARTS WEEK 2026</div>
-          <h2 className="serif giftcard-card-title">Listowel Visual Arts Week Gift Card</h2>
+          <h2 className="serif giftcard-card-title">Listowel Visual Arts Week</h2>
           <div className="giftcard-review">
-            From €50. Redeemable against 2026 workshops, life drawing and events during the ten-day
-            gathering.
+            {artsWeekEnded
+              ? 'The 2026 gathering has concluded. Revisit the programme and watch for future announcements.'
+              : 'Workshop gift cards are available on the secure Olive Stack Gallery shop.'}
           </div>
           <div className="giftcard-ctas">
-            <button className="pill pill--bronze" onClick={() => navigate(paths.workshops())}>
-              SEE 2026 WORKSHOPS
-            </button>
-            <a
-              className="pill pill--outline"
-              href="https://www.olivestack.com/products/listowel-visual-arts-week-gift-card"
-              target="_blank"
-              rel="noreferrer"
-            >
-              BUY ON LIVE SITE →
-            </a>
+            <Link className="pill pill--bronze" href={paths.workshops()}>
+              {artsWeekEnded ? 'VIEW 2026 PROGRAMME' : 'SEE 2026 WORKSHOPS'}
+            </Link>
+            {!artsWeekEnded && (
+              <a className="pill pill--outline" href={shopifyGiftCard('artsWeek').url}>
+                BUY ON SECURE SHOP →
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -16,8 +16,8 @@ export function SponsorsPage() {
         </h1>
         <p className="sponsors-blurb">
           We are extremely grateful to the local businesses, sponsors and friends whose support
-          made the 2025 gathering such a success. We look forward to continuing this creative
-          journey together in 2026.
+          made the 2026 gathering possible. Their support helped bring exhibitions, workshops and
+          community art to Listowel across ten memorable days.
         </p>
       </div>
 
@@ -32,7 +32,7 @@ export function SponsorsPage() {
 
       <div className="sponsors-cta">
         <h2 className="serif sponsors-cta-title">
-          Become a sponsor and support ten days of exhibitions, workshops and community art
+          Support future exhibitions, workshops and community art in Listowel
         </h2>
         <a
           className="pill pill--bronze"
@@ -40,7 +40,7 @@ export function SponsorsPage() {
           target="_blank"
           rel="noreferrer"
         >
-          SPONSOR ON LIVE SITE →
+          SUPPORT ON THE SECURE SHOP →
         </a>
       </div>
     </div>

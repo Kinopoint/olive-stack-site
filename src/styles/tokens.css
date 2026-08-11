@@ -4,9 +4,9 @@
   --color-surface-alt: #efe9da;
   --color-card: #fffdf7;
   --color-ink: #262a1c;
-  --color-olive: #6b7444;
+  --color-olive: #5e6936;
   --color-deep: #3d4526;
-  --color-bronze: #8a6a3f;
+  --color-bronze: #76562f;
   --color-gold: #c9a15c;
   --color-gold-soft: #f2d9a7;
   --color-block-shadow: #d9d2bd;
@@ -14,10 +14,10 @@
   --ink-80: rgba(38, 42, 28, 0.8);
   --ink-75: rgba(38, 42, 28, 0.75);
   --ink-70: rgba(38, 42, 28, 0.7);
-  --ink-65: rgba(38, 42, 28, 0.65);
-  --ink-60: rgba(38, 42, 28, 0.6);
-  --ink-55: rgba(38, 42, 28, 0.55);
-  --ink-50: rgba(38, 42, 28, 0.5);
+  --ink-65: rgba(38, 42, 28, 0.72);
+  --ink-60: rgba(38, 42, 28, 0.7);
+  --ink-55: rgba(38, 42, 28, 0.68);
+  --ink-50: rgba(38, 42, 28, 0.68);
   --ink-40: rgba(38, 42, 28, 0.4);
   --ink-35: rgba(38, 42, 28, 0.35);
   --ink-30: rgba(38, 42, 28, 0.3);

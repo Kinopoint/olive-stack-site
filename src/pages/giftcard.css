@@ -99,6 +99,20 @@
   font-weight: 700;
 }
 
+.giftcard-unavailable {
+  margin: 0;
+  color: var(--ink-70);
+  font-size: 14px;
+}
+
+.giftcard-live-link {
+  align-self: flex-start;
+  border-bottom: 1px solid var(--ink-40);
+  padding-bottom: 2px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .giftcard-ctas {
   display: flex;
   gap: 12px;

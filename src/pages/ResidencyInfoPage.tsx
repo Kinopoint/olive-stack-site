@@ -1,6 +1,6 @@
-import { navigate } from '../hooks/useHashRoute';
+import { Link } from '../components/Link';
 import { paths } from '../lib/routes';
-import { img } from '../data/collections';
+import { imageSrcSet, img } from '../data/collections';
 import './residency.css';
 
 const MAILING_LIST_URL =
@@ -18,9 +18,9 @@ export function ResidencyInfoPage() {
     <div className="residency-info">
       <div className="residency-info-main">
         <nav className="breadcrumb" aria-label="Breadcrumb">
-          <button onClick={() => navigate(paths.home())}>HOME</button> /{' '}
-          <button onClick={() => navigate(paths.residency())}>ARTISTS RESIDENCY</button> /{' '}
-          <span className="crumb-current">INFORMATION</span>
+          <Link href={paths.home()}>HOME</Link> /{' '}
+          <Link href={paths.residency()}>ARTISTS RESIDENCY</Link> /{' '}
+          <span className="crumb-current" aria-current="page">INFORMATION</span>
         </nav>
         <h1 className="serif residency-info-title">
           Residency <em>information</em>
@@ -60,9 +60,12 @@ export function ResidencyInfoPage() {
         </div>
         <img
           src={img('FB_IMG_1718726304614.jpg?v=1736424652', 800)}
+          srcSet={imageSrcSet(img('FB_IMG_1718726304614.jpg?v=1736424652', 800), [320, 480, 640, 800])}
+          sizes="(max-width: 1024px) calc(100vw - 40px), 420px"
           alt="The gallery in Listowel"
           className="residency-info-photo"
           loading="lazy"
+          decoding="async"
         />
       </aside>
     </div>

@@ -87,6 +87,13 @@
   font-weight: 600;
 }
 
+.search-empty {
+  margin: 0;
+  color: var(--ink-70);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 @media (max-width: 1024px) {
   .search-results {
     grid-template-columns: repeat(3, 1fr);

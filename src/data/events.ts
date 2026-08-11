@@ -1,7 +1,10 @@
 import { img } from './collections';
 
 export interface Workshop {
+  key: string;
   date: string;
+  startDate: string;
+  endDate: string;
   name: string;
   desc: string;
   price: string;
@@ -17,21 +20,30 @@ export const WORKSHOP_CART_IMG = img(
 
 export const WORKSHOPS: Workshop[] = [
   {
+    key: 'cyanotype-nature-printing',
     date: 'Fri 31.07',
+    startDate: '2026-07-31T00:00:00+01:00',
+    endDate: '2026-08-01T00:00:00+01:00',
     name: 'Cyanotype Nature Printing: Bring Listowel Home',
     desc: 'Sun-printing with gathered flora of the town and riverbank',
     price: '€85',
     amount: 85,
   },
   {
+    key: 'explore-creativity-with-glass',
     date: 'Sat–Sun 01–02.08',
+    startDate: '2026-08-01T00:00:00+01:00',
+    endDate: '2026-08-03T00:00:00+01:00',
     name: 'Explore Creativity with Glass, with Solly',
     desc: 'Two-day fluid double reverse mosaic technique workshop',
     price: '€280',
     amount: 280,
   },
   {
+    key: 'micro-mosaic-jewellery',
     date: 'Mon 03.08',
+    startDate: '2026-08-03T00:00:00+01:00',
+    endDate: '2026-08-04T00:00:00+01:00',
     name: 'Micro Mosaic Jewellery, with Olive Stack',
     desc: 'Make your own wearable art with Murano glass filati',
     price: '€140',
@@ -39,34 +51,60 @@ export const WORKSHOPS: Workshop[] = [
     highlighted: true,
   },
   {
+    key: 'the-cailleach-within',
     date: 'Tue 04.08',
+    startDate: '2026-08-04T00:00:00+01:00',
+    endDate: '2026-08-05T00:00:00+01:00',
     name: 'The Cailleach Within: Felted Crone Wisdom Keeper, with Laura Hitchcock',
     desc: 'Needle-felting rooted in Irish myth',
     price: '€150',
     amount: 150,
   },
   {
+    key: 'capturing-listowel',
     date: 'Wed 05.08',
+    startDate: '2026-08-05T00:00:00+01:00',
+    endDate: '2026-08-06T00:00:00+01:00',
     name: 'Capturing Listowel, Oil Painting, with Jean Cauthen',
     desc: 'Plein air oils in the streets of the heritage town',
     price: '€110',
     amount: 110,
   },
   {
+    key: 'willow-and-paper-lanterns',
     date: 'Thu 06.08',
+    startDate: '2026-08-06T00:00:00+01:00',
+    endDate: '2026-08-07T00:00:00+01:00',
     name: 'Willow and Paper Lanterns, with Kathleen Doody',
     desc: 'Traditional willow weaving, light and paper',
     price: '€150',
     amount: 150,
   },
   {
+    key: 'tone-and-colour',
     date: 'Fri 07.08',
+    startDate: '2026-08-07T00:00:00+01:00',
+    endDate: '2026-08-08T00:00:00+01:00',
     name: 'Enhance your use of Tone and Colour, with Brendan Campbell',
     desc: 'A focused day of colour theory in practice',
     price: '€70',
     amount: 70,
   },
 ];
+
+export type ArtsWeekPhase = 'upcoming' | 'live' | 'past';
+
+const ARTS_WEEK_START = Date.parse('2026-07-31T00:00:00+01:00');
+const ARTS_WEEK_END = Date.parse('2026-08-10T00:00:00+01:00');
+
+export function artsWeekPhase(now: Date = new Date()): ArtsWeekPhase {
+  if (now.getTime() < ARTS_WEEK_START) return 'upcoming';
+  if (now.getTime() < ARTS_WEEK_END) return 'live';
+  return 'past';
+}
+
+export const workshopHasEnded = (workshop: Workshop, now: Date = new Date()): boolean =>
+  now.getTime() >= Date.parse(workshop.endDate);
 
 export interface Testimonial {
   quote: string;

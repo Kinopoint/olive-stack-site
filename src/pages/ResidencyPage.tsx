@@ -1,6 +1,6 @@
-import { navigate } from '../hooks/useHashRoute';
+import { Link } from '../components/Link';
 import { paths } from '../lib/routes';
-import { img } from '../data/collections';
+import { imageSrcSet, img } from '../data/collections';
 import './residency.css';
 
 const MAILING_LIST_URL =
@@ -43,18 +43,18 @@ export function ResidencyPage() {
             <a className="pill pill--deep" href={MAILING_LIST_URL} target="_blank" rel="noreferrer">
               REGISTER FOR UPDATES
             </a>
-            <button
-              className="pill pill--outline"
-              onClick={() => navigate(paths.residencyInfo())}
-            >
+            <Link className="pill pill--outline" href={paths.residencyInfo()}>
               RESIDENCY INFORMATION
-            </button>
+            </Link>
           </div>
         </div>
         <div className="residency-hero-visual">
           <img
             src={img('FB_IMG_1718726304614.jpg?v=1736424652', 1200)}
+            srcSet={imageSrcSet(img('FB_IMG_1718726304614.jpg?v=1736424652', 1200))}
+            sizes="(max-width: 1024px) calc(100vw - 40px), 50vw"
             alt="Olive Stack Gallery, Listowel"
+            fetchPriority="high"
           />
         </div>
       </section>
@@ -74,12 +74,9 @@ export function ResidencyPage() {
           “I’m dreaming of Ireland. I look forward to hearing your applicant choices!”
         </blockquote>
         <div className="residency-quote-who">AMY WILLIAMS · RESIDENCY APPLICANT</div>
-        <button
-          className="pill pill--outline-cream residency-quote-cta"
-          onClick={() => navigate(paths.testimonials())}
-        >
+        <Link className="pill pill--outline-cream residency-quote-cta" href={paths.testimonials()}>
           READ TESTIMONIALS →
-        </button>
+        </Link>
       </section>
     </div>
   );
